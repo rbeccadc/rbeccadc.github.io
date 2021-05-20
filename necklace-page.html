@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<title>PricklyTemplate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {
+	font-family: "Bebas Neue", sans-serif;
+	letter-spacing:4px;
+	font-size:20px;}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {
+	font-family: "Bebas Neue", sans-serif;
+	letter-spacing:3px;}
+#logo{
+	  margin-left:-8%;
+	  width:114.25%;}
+.sales-heading {
+		 color:white;
+		 font-size:450%;
+		 letter-spacing:4px;
+		 font-weight:bolder; 
+		 padding:7px;}
+.w3-textshop{ 
+		color:white;
+		 font-weight:900; 
+		 background-color:black;
+		 font-family:"Montserrat", sans-serif;
+		 letter-spacing:0px;}
+.product-text{
+		font-size:115%; }
+.sale-text{
+		 color:#E90707; }
+#mySidebar{
+		background-color:#297B48; }
+#myBtn{
+	   background-color:#194B2C; }
+.bar-footer{
+		color:#D6EAEA;
+		width:100%;
+		text-align:left; }
+.subscribe-container {
+		background-color:#297B48;
+		color: white;
+		padding:25px;
+		border: 15px solid white;}
+.subscribe-button{
+		background-color:black;
+		color:white; }
+#mySidebar{
+		margin-left:-32px;
+		color:#D6EAEA; }
+#footer{
+		font-family:"Montserrat", sans-serif;
+		letter-spacing:0px; }
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-top" style="z-index:4;width:282px" id="mySidebar">
+  <div class="w3-container w3-display-container">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img id="logo" src="../../../Pictures/prickly-logo1.jpg" alt="The Prickly Pear Logo"/>
+  </div>
+  <div class="w3-padding-64 w3-large">
+    
+	<a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
+      Necklaces <i class="fa fa-caret-down"></i></a>
+    <a href="#" class="w3-bar-item w3-button">Earrings</a>
+    <a href="#" class="w3-bar-item w3-button">Rings</a>
+    <a href="#" class="w3-bar-item w3-button">Bracelets</a>
+    <a href="#" class="w3-bar-item w3-button">Pendants</a>
+  </div>
+  <a href="#footer" class="bar-footer w3-button w3-padding">Contact</a> <br>
+  <a href="#footer"  class="bar-footer w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-15"><img src="../../../Pictures/prickly-logo1.jpg" width=300px alt="The Prickly Pear Small Logo"/>
+  </div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="main-header w3-container w3-xlarge">
+    <p class="w3-left">Necklaces</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://www.gannett-cdn.com/presto/2020/04/15/PPAS/9be5d957-8db3-4a33-b522-a5dda1670df9-cows_tongue.JPG?crop=2559,1440,x0,y236&width=2559&height=1440&format=pjpg&auto=webp" width=100% height=475px alt="Prickly Pear with Blooms" />
+    <div class="w3-display-topleft" style="padding:240px 48px">
+      <h1 class="sales-heading">Native American Jewelry</h1>
+      <p><a href="#necklaces" class="w3-button w3-textshop w3-padding-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="necklaces">
+    <p>7 items</p>
+  </div>
+
+  <!-- Product grid -->
+    <div class="w3-row">
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/pcb.262649458979681/262647202313240/"><img src="https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/187198759_262647205646573_3246873942488316348_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=FqjIEIqoE_8AX-u74qq&_nc_ht=scontent-hou1-1.xx&oh=2e6d42bc5b6f50d2acc9855a8afa3496&oe=60CB4D95" alt="Nelson Morgan necklace" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Nelson Morgan<br><b>$368</b></p>
+      </div>
+    </div>
+	
+   <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/245657704012190/"><img src="https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/176165335_245657707345523_2847444812966869329_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=b40aDvAp4agAX-vepWU&_nc_ht=scontent-hou1-1.xx&oh=c2d2acc665ca6c532c02c23e4ab55646&oe=60C9F164" alt="Steven Nez pendent necklace" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft">New</span>
+		  <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Steven Nez pendent<br><b>$438</b></p>
+      </div>
+    </div>
+
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/pcb.243055697605724/243055090939118/"><img src="https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/174350094_243055094272451_4861362741229333653_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=qvYhGtilzp8AX-SbM1G&_nc_ht=scontent-hou1-1.xx&oh=3882dd6e120fb9d2ebfde0555362b1ef&oe=60CC9A4B" alt="Heishi with Oxybeads necklace" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Heishi with Oxybeads <br><b>$225</b></p>
+      </div>
+    </div>
+	
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/243673417543952/"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/175031397_243673420877285_716166959507218622_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=rSmxf62Y1tYAX8kEiZ3&_nc_oc=AQnkOcebnXNOl2ACM4xoI8fQdrMDjmGhmLW0V8pB_OiaUnR2QDqlMkFdE5_dpY-trGo&_nc_ht=scontent-dfw5-2.xx&oh=cd337319437a9ffcc9a00cd6f98229d6&oe=60CB821E" alt="Turquoise Heart necklace" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Turquoise Heart<br><b>$132</b></p>
+      </div>
+    </div>
+	
+	<div class="w3-row">
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/243047407606553/"><img src="https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/175051585_243047410939886_4781955118376201473_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=QB2Vy4-VTTcAX8pr8io&_nc_ht=scontent-hou1-1.xx&oh=cf548cf579354d32dd7cec51904c8026&oe=60CA60F2" alt="White Buffalo necklace" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">White Buffalo<br><b>$450</b></p>
+      </div>
+    </div>
+
+	
+	
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/243032257608068/"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/173841325_243032260941401_3656797498603478877_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=I1peLmWga_wAX_vbsFo&_nc_ht=scontent-dfw5-1.xx&oh=a610b0a653a8b4dcf2c375602ecc3dbf&oe=60CAABEF" alt="Turquoise necklace" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Turquoise with Stamped Pendant<br><b>$334</b></p>
+      </div>
+    </div>
+
+
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/pcb.238475511397076/238475374730423/"><img src="https://scontent-hou1-1.xx.fbcdn.net/v/t1.6435-9/170885105_238475378063756_332265656043776154_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=TAY36hwdpqgAX_0B3bR&_nc_ht=scontent-hou1-1.xx&oh=47bc2dd17703d7912d3db7760bdc292a&oe=60CC4019" alt="Lucky Horseshoe necklace" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft">Sale</span>
+		  <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Lucky Horseshow<br><b class="sale-text">$249</b></p>
+      </div>
+    </div>
+</div>
+	
+
+  <!-- Subscribe section -->
+  <div class="subscribe-container w3-padding-45">
+    <h1><strong>Subscribe</strong></h1>
+    <p><strong>To get special offers and VIP treatment:</strong></p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="subscribe-button  w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-phone"></i> (806)445-6975</p>
+        <p><i class="fa fa-fw fa-envelope"></i> pricklypeartradingco@gmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-paypal"></i> PayPal</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+		<p><i class="fa fa-fw fa-usd"></i> Cash</p>
+        <br>
+        <a href="https://www.facebook.com/cherrybellqueener"><i class="fa fa-facebook-official w3-hover-opacity w3-large"></a></i>
+        <a href="https://www.instagram.com/thepricklypearturquoises/"><i class="fa fa-instagram w3-hover-opacity w3-large"></a></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</div>
+
+
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Necklaces" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

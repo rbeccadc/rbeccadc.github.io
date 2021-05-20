@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<title>PricklyTemplate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {
+	font-family: "Bebas Neue", sans-serif;
+	letter-spacing:4px;
+	font-size:20px;}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {
+	font-family: "Bebas Neue", sans-serif;
+letter-spacing:3px;}
+#logo{
+	  margin-left:-8%;
+	  width:114.25%;}
+.sales-heading {
+		 color:white;
+		 font-size:450%;
+		 letter-spacing:4px;
+		 font-weight:bolder; 
+		 padding:7px;}
+.w3-textshop{ 
+		color:white;
+		 font-weight:900; 
+		 background-color:black;
+		 font-family:"Montserrat", sans-serif;
+		 letter-spacing:0px;}
+.product-text{
+		font-size:115%; }
+.sale-text{
+		   color:#E90707; }
+#mySidebar{
+			background-color:#297B48; }
+#myBtn{
+	   background-color:#194B2C; }
+.bar-footer{
+		color:#D6EAEA;
+		width:100%;
+		text-align:left; }
+.subscribe-container {
+		background-color:#297B48;
+		color: white;
+		padding:25px;
+		border: 15px solid white;}
+.subscribe-button{
+		background-color:black;
+		color:white; }
+#mySidebar{
+		margin-left:-32px;
+		color:#D6EAEA;}
+#footer{
+		font-family:"Montserrat", sans-serif;
+		letter-spacing:0px; }
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-top" style="z-index:4;width:282px" id="mySidebar">
+  <div class="w3-container w3-display-container">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <img id="logo" src="../../../../../Pictures/prickly-logo1.jpg" alt="The Prickly Pear Logo"/>
+  </div>
+  <div class="w3-padding-64 w3-large">
+    <a href="#" class="w3-bar-item w3-button">Necklaces</a>
+    <a href="#" class="w3-bar-item w3-button">Earrings</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-left-align" id="myBtn">
+      Rings <i class="fa fa-caret-down"></i></a>
+    <a href="#" class="w3-bar-item w3-button">Bracelets</a>
+    <a href="#" class="w3-bar-item w3-button">Pendants</a>
+  </div>
+  <a href="#footer" class="bar-footer w3-button w3-padding">Contact</a> <br>
+  <a href="#footer"  class="bar-footer w3-button w3-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-15"><img src="../../../../../Pictures/prickly-logo1.jpg" width=300px alt="The Prickly Pear Small Logo"/>
+  </div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">Rings</p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="https://www.lovethegarden.com/sites/default/files/content/articles/UK_prickly-pear-in-flower.jpg" width=100% height=475px alt="Prickly Pear with Blooms" />
+    <div class="w3-display-topleft" style="padding:240px 48px">
+      <h1 class="sales-heading">Summer Collection</h1>
+      <p><a href="#rings" class="w3-button w3-textshop w3-padding-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-text-grey" id="rings">
+    <p>11 items</p>
+  </div>
+
+  <!-- Product grid -->
+    <div class="w3-row">
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/208409147737046"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/155019156_208409151070379_3602775719455606529_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=62DQWfxPiQwAX_6m8Dg&_nc_ht=scontent-dfw5-1.xx&oh=751858dd4ddc0fa481ccfa9351be3327&oe=60CB1D8E" alt="Wild Horse Needlepoint Zuni Cluster" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Wild Horse<br><b>$136</b></p>
+      </div>
+    </div>
+	
+   <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/243019230942704//"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/174955246_243019234276037_7688711754959389624_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=55Q0Mc8VCAwAX87J3EF&_nc_ht=scontent-dfw5-2.xx&oh=d00ca7dd19c29e7fb8d746c8f33cd75a&oe=60CA003B" alt="Fern Platero ring" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft">New</span>
+		  <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">M&R Calleditto<br><b>$82</b></p>
+      </div>
+    </div>
+
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/223200912924536/"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/161938530_223200916257869_405111424923531052_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=NbTY9P8s4iIAX8yxtC5&_nc_ht=scontent-dfw5-2.xx&oh=c22033cedeb0ef58483a8f432cac92e9&oe=60C8A6AD" alt="Fern Platero ring" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Queen Bells<br><b>$26</b></p>
+      </div>
+    </div>
+	
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/243019230942704//"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/174955246_243019234276037_7688711754959389624_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=55Q0Mc8VCAwAX87J3EF&_nc_ht=scontent-dfw5-2.xx&oh=d00ca7dd19c29e7fb8d746c8f33cd75a&oe=60CA003B" alt="Fern Platero ring" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">M&R Calleditto<br><b>$82</b></p>
+      </div>
+    </div>
+	
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/223200912924536/"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/161938530_223200916257869_405111424923531052_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=NbTY9P8s4iIAX8yxtC5&_nc_ht=scontent-dfw5-2.xx&oh=c22033cedeb0ef58483a8f432cac92e9&oe=60C8A6AD" alt="Fern Platero ring" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Queen Bells<br><b>$26</b></p>
+      </div>
+    </div>
+
+	
+	
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/221610773083550"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/160741727_221610776416883_7175045184540779320_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=pN6DygLbSXkAX_aKDsS&_nc_ht=scontent-dfw5-1.xx&oh=380387b85030612c63917fb3a61cd407&oe=60CAF3CE" alt="Fern Platero ring" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Fern Platero<br><b>$64</b></p>
+      </div>
+    </div>
+
+
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/243163970928230/"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/174272851_243163974261563_443346592233307288_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=3Za0IKXSIHcAX-GH9gH&_nc_ht=scontent-dfw5-1.xx&oh=3754a9ef6f8c988b85c48fa6c928251a&oe=60C8ACA8" alt="Fern Platero ring" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Silver Braids<br><b>$53</b></p>
+      </div>
+    </div>
+	
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/243019230942704//"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/174955246_243019234276037_7688711754959389624_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=55Q0Mc8VCAwAX87J3EF&_nc_ht=scontent-dfw5-2.xx&oh=d00ca7dd19c29e7fb8d746c8f33cd75a&oe=60CA003B" alt="Fern Platero ring" style="width:100%"></a>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">M&R Calleditto<br><b>$82</b></p>
+      </div>
+    </div>
+	
+	<div class="w3-row">
+	 <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/a.105268594717769/223200912924536/"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/161938530_223200916257869_405111424923531052_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=NbTY9P8s4iIAX8yxtC5&_nc_ht=scontent-dfw5-2.xx&oh=c22033cedeb0ef58483a8f432cac92e9&oe=60C8A6AD" alt="Fern Platero ring" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft">Sale</span>
+		  <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Queen Bells<br><b class="sale-text">$26</b></p>
+      </div>
+    </div>
+	
+
+
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/208409147737046"><img src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/155019156_208409151070379_3602775719455606529_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=62DQWfxPiQwAX_6m8Dg&_nc_ht=scontent-dfw5-1.xx&oh=751858dd4ddc0fa481ccfa9351be3327&oe=60CB1D8E" alt="Wild Horse Needlepoint Zuni Cluster" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Wild Horse<br><b class="sale-text">$136</b></p>
+      </div>
+    </div>
+	
+	
+     <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <a href="https://www.facebook.com/cherrybellqueener/photos/220500563194571"><img src="https://scontent-dfw5-2.xx.fbcdn.net/v/t1.6435-9/160933486_220500566527904_2214711961274623755_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=WTXIg149e1YAX8inBGB&_nc_ht=scontent-dfw5-2.xx&oh=e298755c1005d0c2ec340b39173e7187&oe=60C97262" alt="Wedding Ring Set, Turquoise and white opal with CZ marquise" style="width:100%"></a>
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p class="product-text">Wedding Ring Set<br><b class="sale-text">$188</b></p>
+      </div>
+    </div>
+	</div>
+	
+<!-- Place Holders for new items-->
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        
+      </div>
+      <div class="w3-container">
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="subscribe-container w3-padding-45">
+    <h1><strong>Subscribe</strong></h1>
+    <p><strong>To get special offers and VIP treatment:</strong></p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="subscribe-button  w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-phone"></i> (806)445-6975</p>
+        <p><i class="fa fa-fw fa-envelope"></i> pricklypeartradingco@gmail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-paypal"></i> PayPal</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+		<p><i class="fa fa-fw fa-usd"></i> Cash</p>
+        <br>
+        <a href="https://www.facebook.com/cherrybellqueener"><i class="fa fa-facebook-official w3-hover-opacity w3-large"></a></i>
+        <a href="https://www.instagram.com/thepricklypearturquoises/"><i class="fa fa-instagram w3-hover-opacity w3-large"></a></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</div>
+
+
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Rings" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
